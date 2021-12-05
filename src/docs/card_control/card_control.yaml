@@ -1,0 +1,37 @@
+Card Controls Insertion 
+---
+tags:
+  - Card_control
+parameters:
+  - name: body
+    description: The body should contain the card control details
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "card_id"
+      
+      properties:
+        card_id:
+          type: "card_id"
+          example: "27be4ac2-3ce1-4762-ab7e-96ace5f2a496"
+        category_control:
+          type: "integer"
+          example: "1256"
+        merchant_control:
+          type: "string"
+          example: "Subway"
+        max_amount:
+          type: "integr"
+          example: "100"
+        min_amount:
+          type: "integr"
+          example: "10"
+
+responses:
+  200:
+    description: When a card control sucessfully created
+
+  400:
+    description: Fails to lcreate a card control

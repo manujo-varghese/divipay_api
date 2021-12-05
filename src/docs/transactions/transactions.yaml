@@ -1,0 +1,16 @@
+Perfom transactions
+---
+tags:
+  - Transactions
+parameters:
+  - name: body
+    description: call the api to see if a transaction is approved or not
+
+    
+
+responses:
+  200:
+    description: When a card control sucessfully created
+
+  400:
+    description: Fails to lcreate a card control
