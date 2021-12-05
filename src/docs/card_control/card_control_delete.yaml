@@ -1,0 +1,25 @@
+Card Controls deletion
+---
+tags:
+  - Card_control
+parameters:
+  - name: body
+    description: The body should contain the card control details
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "card_id"
+      
+      properties:
+        card_id:
+          type: "card_id"
+          example: "27be4ac2-3ce1-4762-ab7e-96ace5f2a496"
+        
+responses:
+  204:
+    description: When a card control sucessfully deleted
+
+  404:
+    description: Fails to locate card control
